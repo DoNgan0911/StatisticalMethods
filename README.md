@@ -23,6 +23,9 @@ Features
 
 4. Open-source Implementation: Available via a Google Colab notebook for easy experimentation.
 
+## Dataset Information
+We extracted four medical reports from publicly available datasets on Kaggle and MTSamples.com. These reports contain complex, lengthy medical language typical of Electronic Health Records. The dataset was used to develop and evaluate our summarization and entity recognition models.
+
 ## Motivation
 Physicians spend significant time reviewing EHRs, averaging over 16 minutes per patient.
 
@@ -31,11 +34,11 @@ Medical reports are often long, complex, and prone to human error.
 Faster, accurate summarization can accelerate medical decision-making and improve patient outcomes.
 
 ## Methodology
-TextRank: A graph-based ranking model to select the most relevant sentences based on their relationships within the text.
+**TextRank**: A graph-based ranking model to select the most relevant sentences based on their relationships within the text.
 
-Scispacy: An NLP model trained on biomedical data to identify domain-specific terminology and enhance summary relevance.
+**Scispacy**: An NLP model trained on biomedical data to identify domain-specific terminology and enhance summary relevance.
 
-Results
+## Results
 ROUGE-1 F1 score: 0.5467
 
 This result demonstrates moderate agreement between generated summaries and expert summaries, with effective key term extraction.
@@ -59,6 +62,7 @@ Modify parameters and models as needed to suit your dataset.
 
 ## References
 A complete list of references is included in the project report file and covers all relevant literature and tools used.
+
 
 Thank you for checking out our project!
 
